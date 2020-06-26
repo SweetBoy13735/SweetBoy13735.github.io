@@ -1,5 +1,5 @@
 # Sweetboy13735's Portfolio Website
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/Sweetboy13735/Sweetboy13735.github.io/blob/master/CODE_OF_CONDUCT.md)
 
 As it says on the tin, this project is holding all of the source code for my portfolio website, which can be viewed [here](https://Sweetboy13735.github.io).
 
