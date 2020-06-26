@@ -1,0 +1,2 @@
+# Telling Git to ignore the Eclipse IDE project files.
+.project
