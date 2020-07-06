@@ -14,6 +14,87 @@
     <!-- Resource links -->
     <link href="./favicon.ico" type="image/x-icon "rel="icon" />
     <link href="./favicon.ico" type="image/x-icon "rel="shortcut icon" />
+    
+    <!-- Page-specific styling -->
+    <style>
+      /* Global styles */
+      @font-face {
+          font-family: "Pixel EX";
+          src: url("./res/assets/fonts/pixelex.ttf") format("truetype");
+      }
+      
+      * {
+          box-sizing: border-box;
+      }
+      
+      html {
+          color: whitesmoke;
+          font-family: "Pixel EX", sans-serif;
+          font-size: 20px;
+          line-height: 1.25;
+      }
+      
+      body {
+          background-color: darkgray;
+          margin: 0;
+          padding: 0;
+      }
+      
+      a {
+          color: #9F00BF;
+          text-decoration: none;
+          transition: all 350ms ease 50ms;
+      }
+      
+      a:hover {
+          color: #D715FF;
+      }
+      
+      .container {
+          margin: 0 auto;
+          padding: 10px;
+          width: 1250px;
+      }
+      
+      /* Header styles */
+      header {
+          background-color: darkgray;
+          border-bottom: 5px solid lightgray;
+          border-radius: 0 0 25px 25px;
+          height: 100px;
+          position: fixed;
+          width: 100%;
+      }
+      
+      a.header-logo {
+          align-items: center;
+          display: flex;
+          justify-content: space-evenly;
+      }
+      
+      .header-logo img {
+          height: auto;
+          width: 75px;
+      }
+      
+      .header-logo h1 {
+          margin: 0;
+      }
+      
+      /* Main content styles */
+      .banner {
+          background: url("./res/assets/img/banners/Channel_art_background.png") center / cover no-repeat;
+          height: 100vh;
+          padding: 37.5vh 10px 10px 10px;
+          text-align: center;
+      }
+      
+      .banner p.container {
+          background-color: rgba(128, 128, 128, 0.5);
+          border: 5px dashed lightgray;
+          border-radius: 10px;
+      }
+    </style>
   </head>
   <body>
     <!-- Header structure -->
@@ -28,9 +109,9 @@
     
     <!-- Main content structure -->
     <main>
-      <div class="container">
+      <div class="banner">
         <h1>Coming soon!</h1>
-        <p>Hi there, thanks for taking an interest in the site. I'm currently working on it as we speak so I'll need some time to get everything up and running. In the meantime, why not check out my <a href="https://www.youtube.com/channel/UChx0vGLiKDYXKs_DxgDBYHg" target="_blank">YouTube</a> and <a href="https://twitter.com/Sweetboy13735" target="_blank">Twitter</a> accounts? I'll be announcing the site's release on these platforms so please have a look. :)</p>
+        <p class="container">Hi there, thanks for taking an interest in the site. I'm currently working on it as we speak so I'll need some time to get everything up and running. In the meantime, why not check out my <a href="https://www.youtube.com/channel/UChx0vGLiKDYXKs_DxgDBYHg" target="_blank">YouTube</a> and <a href="https://twitter.com/Sweetboy13735" target="_blank">Twitter</a> accounts? I'll be announcing the site's release on these platforms so please have a look. :)</p>
       </div>
     </main>
   </body>
