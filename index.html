@@ -83,16 +83,52 @@
       
       /* Main content styles */
       .banner {
+          align-items: center;
           background: url("./res/assets/img/banners/Channel_art_background.png") center / cover no-repeat;
+          border-bottom: 5px solid lightgray;
+          display: flex;
           height: 100vh;
-          padding: 37.5vh 10px 10px 10px;
+          justify-content: center;
+          padding: 100px 10px 10px 10px;
           text-align: center;
       }
       
-      .banner p.container {
+      .banner div.container {
           background-color: rgba(128, 128, 128, 0.5);
           border: 5px dashed lightgray;
           border-radius: 10px;
+      }
+      
+      /* Responsive styles */
+      @media only screen and (max-width: 1250px) {
+          .container {
+              width: 95%;
+          }
+      }
+      
+      @media only screen and (max-width: 768px) {
+          html {
+              font-size: 15px;
+          }
+          
+          header {
+              height: 50px;
+          }
+          
+          .header-logo img {
+              width: 25px;
+          }
+          
+          .banner {
+              padding-top: 50px;
+          }
+      }
+      
+      @media only screen and (max-width: 575px) {
+          .banner div.container {
+              height: 100%;
+              overflow-y: scroll;
+          }
       }
     </style>
   </head>
@@ -110,8 +146,14 @@
     <!-- Main content structure -->
     <main>
       <div class="banner">
-        <h1>Coming soon!</h1>
-        <p class="container">Hi there, thanks for taking an interest in the site. I'm currently working on it as we speak so I'll need some time to get everything up and running. In the meantime, why not check out my <a href="https://www.youtube.com/channel/UChx0vGLiKDYXKs_DxgDBYHg" target="_blank">YouTube</a> and <a href="https://twitter.com/Sweetboy13735" target="_blank">Twitter</a> accounts? I'll be announcing the site's release on these platforms so please have a look. :)</p>
+        <div class="container">
+          <h1>Coming soon!</h1>
+          <p>
+            Hi there, thanks for taking an interest in the site. I'm currently working on it as we speak, so I'll need some time to get everything up and running.
+            <br />
+            In the meantime, why not check out my <a href="https://www.youtube.com/channel/UChx0vGLiKDYXKs_DxgDBYHg" target="_blank">YouTube</a> and <a href="https://twitter.com/Sweetboy13735" target="_blank">Twitter</a> accounts? I'll be announcing the site's release on these platforms so please have a look. :)
+          </p>
+        </div>
       </div>
     </main>
   </body>
