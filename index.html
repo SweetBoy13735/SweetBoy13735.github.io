@@ -98,15 +98,10 @@
           border: 5px dashed lightgray;
           border-radius: 10px;
           display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
           height: 275px;
-      }
-      
-      .banner .container h1 {
-          flex-shrink: 6;
-      }
-      
-      .banner .container p {
-          flex-shrink: 1;
+          overflow: auto;
       }
       
       /* Responsive styles */
@@ -134,18 +129,7 @@
           }
       }
       
-      @media only screen and (max-width: 432px) {
-          .header-logo h1 {
-              display: none;
-          }
-          
-          .banner .container p {
-              height: 100%;
-              overflow-y: scroll;
-          }
-      }
-      
-      @media only screen and (max-height: 330px) {
+      @media only screen and (max-height: 395px) {
           .banner div.container {
               height: 95%;
           }
