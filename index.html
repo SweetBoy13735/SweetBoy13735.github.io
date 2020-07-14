@@ -74,11 +74,28 @@
           width: 100%;
       }
       
-      a.header-logo {
+      header nav, a.header-logo, ul.header-menu {
           align-items: center;
-          color: #9F00BF;
           display: flex;
-          justify-content: space-evenly;
+          justify-content: space-between;
+      }
+      
+      a.header-logo {
+          color: #9F00BF;
+          width: 405px;
+      }
+      
+      button.header-menu-toggle {
+          color: whitesmoke;
+          display: none;
+          font-weight: bold;
+      }
+      
+      ul.header-menu {
+          list-style: none;
+          margin: 0;
+          padding-left: 0;
+          width: calc(100% - 475px);
       }
       
       .header-logo img {
@@ -88,6 +105,19 @@
       
       .header-logo h1 {
           margin: 0;
+      }
+      
+      button.header-menu-toggle, .header-menu a {
+          background-color: gray;
+          border: 1px solid dimgray;
+          border-radius: 5px;
+          padding: 10px;
+      }
+      
+      .header-menu a:hover {
+          background-color: slategray;
+          border-color: black;
+          border-radius: 10px;
       }
       
       /* Main content styles */
@@ -125,12 +155,6 @@
               padding-top: 50px;
           }
       }
-      
-      @media only screen and (max-height: 395px) {
-          .banner div.container {
-              height: 95%;
-          }
-      }
     </style>
   </head>
   <body>
@@ -141,6 +165,18 @@
           <img src="./res/assets/img/logos/Sweetboy13735.png" alt="Sweetboy13735 logo" />
           <h1>Sweetboy13735</h1>
         </a>
+        <button class="header-menu-toggle" onclick="toggleHeaderMenu()">☰</button>
+        <ul class="header-menu">
+          <li>
+            <a href="./about.html">About me</a>
+          </li>
+          <li>
+            <a href="./projects.html">My projects</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact me</a>
+          </li>
+        </ul>
       </nav>
     </header>
     
