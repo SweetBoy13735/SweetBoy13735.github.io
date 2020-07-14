@@ -89,6 +89,7 @@
           color: whitesmoke;
           display: none;
           font-weight: bold;
+          padding: 5px;
       }
       
       ul.header-menu {
@@ -111,6 +112,9 @@
           background-color: gray;
           border: 1px solid dimgray;
           border-radius: 5px;
+      }
+      
+      .header-menu a {
           padding: 10px;
       }
       
@@ -136,6 +140,24 @@
           .container {
               width: 95%;
           }
+          
+          ul.header-menu {
+              width: calc(100% - 425px);
+          }
+      }
+      
+      @media only screen and (max-width: 1032px) {
+          a.header-logo {
+              width: fit-content;
+          }
+          
+          ul.header-menu {
+              width: calc(100% - 125px);
+          }
+          
+          .header-logo h1 {
+              display: none;
+          }
       }
       
       @media only screen and (max-width: 768px) {
@@ -147,10 +169,59 @@
               height: 50px;
           }
           
+          ul.header-menu {
+              width: calc(100% - 75px);
+          }
+          
           .header-logo img {
               width: 25px;
           }
           
+          .header-menu a {
+              padding: 7.5px;
+          }
+      }
+      
+      @media only screen and (max-width: 524px) {
+          a.header-logo {
+              width: 275px;
+          }
+          
+          button.header-menu-toggle {
+              display: inline-block;
+          }
+          
+          ul.header-menu {
+              display: block;
+              position: fixed;
+              right: -151.86px;
+              top: 55px;
+              transition: right 200ms ease;
+              width: fit-content;
+          }
+          
+          .header-logo h1 {
+              display: block;
+          }
+          
+          .header-menu li {
+              clear: right;
+              float: right;
+              margin: 7.5px 0;
+          }
+          
+          .banner {
+              font-size: 1rem;
+          }
+      }
+      
+      @media only screen and (max-width: 350px) {
+          .header-logo h1, .banner h1 {
+              display: none;
+          }
+      }
+      
+      @media only screen and (max-height: calc(425px * 0.5625)) {
           .banner {
               padding-top: 50px;
           }
@@ -189,5 +260,17 @@
         </div>
       </div>
     </main>
+    
+    <!-- Scripts -->
+    <script type="text/javascript">
+      var headerMenuVisible = false;
+      var headerMenu = document.getElementsByClassName("header-menu")[0];
+      
+      function toggleHeaderMenu() {
+          headerMenu.style.right = headerMenuVisible ? "-151.86px" : "25px";
+          
+          headerMenuVisible = !headerMenuVisible;
+      }
+    </script>
   </body>
 </html>
