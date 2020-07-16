@@ -32,6 +32,7 @@
           font-family: "Pixel EX", sans-serif;
           font-size: 20px;
           line-height: 1.25;
+          scroll-behavior: smooth;
       }
       
       body {
@@ -50,6 +51,12 @@
           color: #D715FF;
       }
       
+      nav ul {
+          list-style: none;
+          margin: 0;
+          padding-left: 0;
+      }
+      
       a.hbi-wrapper {
           color: #040;
       }
@@ -64,6 +71,12 @@
           width: 1250px;
       }
       
+      .flex {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+      }
+      
       /* Navigation bar styles */
       nav.nav-bar {
           background-color: darkgray;
@@ -72,12 +85,6 @@
           height: 100px;
           position: fixed;
           width: 100%;
-      }
-      
-      nav.nav-bar .container, a.nav-logo, ul.nav-menu {
-          align-items: center;
-          display: flex;
-          justify-content: space-between;
       }
       
       a.nav-logo {
@@ -93,15 +100,12 @@
       }
       
       ul.nav-menu {
-          list-style: none;
-          margin: 0;
-          padding-left: 0;
           width: calc(100% - 475px);
       }
       
       .nav-logo img {
-          height: auto;
-          width: 75px;
+          height: 75px;
+          width: auto;
       }
       
       .nav-logo h1 {
@@ -133,6 +137,54 @@
           font-size: 1.5rem;
           height: 100vh;
           text-align: center;
+      }
+      
+      /* Main content styles */
+      a.back-to-top {
+          background-color: gray;
+          border: 5px solid lightgray;
+          border-radius: 10px;
+          float: right;
+          padding: 10px;
+      }
+      
+      a.back-to-top:hover {
+          background-color: dimgray;
+          border-color: gray;
+      }
+      
+      /* Footer styles */
+      footer {
+          background-color: dimgray;
+          border-top: 5px solid lightgray;
+          padding: 15px;
+      }
+      
+      footer nav {
+          padding-left: 10px;
+      }
+      
+      ul.social-icons {
+          margin: 16px 0;
+          flex-wrap: wrap;
+      }
+      
+      .social-icons li {
+          padding: 0 16px;
+      }
+      
+      .social-icons img {
+          height: 32px;
+          width: auto;
+      }
+      
+      .sitemap .flex {
+          justify-content: space-evenly;
+      }
+      
+      .sitemap h3 {
+          color: whitesmoke;
+          margin: 0.5em 0;
       }
       
       /* Responsive styles */
@@ -234,13 +286,13 @@
   <body>
     <!-- Navigation bar structure -->
     <nav class="nav-bar">
-      <div class="container">
-        <a class="nav-logo" href="#" title="Scroll to top">
+      <div class="flex container">
+        <a class="flex nav-logo" href="#" title="Scroll to top">
           <img src="./res/assets/img/logos/Sweetboy13735.png" alt="Sweetboy13735 logo" />
           <h1>Sweetboy13735</h1>
         </a>
         <button class="nav-menu-toggle" onclick="toggleNavMenu()">☰</button>
-        <ul class="nav-menu">
+        <ul class="flex nav-menu">
           <li>
             <a href="./about.html">About me</a>
           </li>
@@ -271,7 +323,7 @@
     <footer>
       <nav class="social-media">
         <h2>Follow me</h2>
-        <ul class="social-icon">
+        <ul class="flex social-icons">
           <li>
             <a href="https://github.com/Sweetboy13735" target="_blank" title="Check out my GitHub account!">
               <img src="./res/assets/img/icons/GitHub.png" alt="GitHub icon" />
@@ -322,7 +374,7 @@
       <hr />
       <nav class="sitemap">
         <h2>Sitemap</h2>
-        <div class="container">
+        <div class="flex container">
           <ul class="footer-menu">
             <li>
               <a href="#">
