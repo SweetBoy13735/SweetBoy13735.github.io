@@ -9,7 +9,7 @@
     <meta name="google-site-verification" content="DIjBkBqBAJnJuYSA9EaDUy30FQbIpkZxwLiIpOVUz6M" />
     
     <!-- Page title -->
-    <title>Sweetboy13735 | Coming soon!</title>
+    <title>Sweetboy13735 | Official Site</title>
     
     <!-- Resource links -->
     <link href="./favicon.ico" type="image/x-icon "rel="icon" />
@@ -64,8 +64,8 @@
           width: 1250px;
       }
       
-      /* Header styles */
-      header {
+      /* Navigation bar styles */
+      nav.nav-bar {
           background-color: darkgray;
           border-bottom: 5px solid lightgray;
           border-radius: 0 0 25px 25px;
@@ -74,58 +74,58 @@
           width: 100%;
       }
       
-      header nav, a.header-logo, ul.header-menu {
+      nav.nav-bar .container, a.nav-logo, ul.nav-menu {
           align-items: center;
           display: flex;
           justify-content: space-between;
       }
       
-      a.header-logo {
+      a.nav-logo {
           color: #9F00BF;
           width: 405px;
       }
       
-      button.header-menu-toggle {
+      button.nav-menu-toggle {
           color: whitesmoke;
           display: none;
           font-weight: bold;
           padding: 5px;
       }
       
-      ul.header-menu {
+      ul.nav-menu {
           list-style: none;
           margin: 0;
           padding-left: 0;
           width: calc(100% - 475px);
       }
       
-      .header-logo img {
+      .nav-logo img {
           height: auto;
           width: 75px;
       }
       
-      .header-logo h1 {
+      .nav-logo h1 {
           margin: 0;
       }
       
-      button.header-menu-toggle, .header-menu a {
+      button.nav-menu-toggle, .nav-menu a {
           background-color: gray;
           border: 1px solid dimgray;
           border-radius: 5px;
       }
       
-      .header-menu a {
+      .nav-menu a {
           padding: 10px;
       }
       
-      .header-menu a:hover {
+      .nav-menu a:hover {
           background-color: slategray;
           border-color: black;
           border-radius: 10px;
       }
       
-      /* Main content styles */
-      .banner {
+      /* Header styles */
+      header {
           align-items: center;
           background: url("./res/assets/img/banners/Channel_art_background.png") center / cover no-repeat;
           border-bottom: 5px solid lightgray;
@@ -141,21 +141,21 @@
               width: 95%;
           }
           
-          ul.header-menu {
+          ul.nav-menu {
               width: calc(100% - 425px);
           }
       }
       
       @media only screen and (max-width: 1032px) {
-          a.header-logo {
+          a.nav-logo {
               width: fit-content;
           }
           
-          ul.header-menu {
+          ul.nav-menu {
               width: calc(100% - 125px);
           }
           
-          .header-logo h1 {
+          .nav-logo h1 {
               display: none;
           }
       }
@@ -165,33 +165,33 @@
               font-size: 15px;
           }
           
-          header {
+          nav.nav-bar {
               height: 50px;
           }
           
-          ul.header-menu {
+          ul.nav-menu {
               width: calc(100% - 75px);
           }
           
-          .header-logo img {
+          .nav-logo img {
               width: 25px;
           }
           
-          .header-menu a {
+          .nav-menu a {
               padding: 7.5px;
           }
       }
       
       @media only screen and (max-width: 524px) {
-          a.header-logo {
+          a.nav-logo {
               width: 275px;
           }
           
-          button.header-menu-toggle {
+          button.nav-menu-toggle {
               display: inline-block;
           }
           
-          ul.header-menu {
+          ul.nav-menu {
               display: block;
               position: fixed;
               right: -151.86px;
@@ -200,44 +200,44 @@
               width: fit-content;
           }
           
-          .header-logo h1 {
+          .nav-logo h1 {
               display: block;
           }
           
-          .header-menu li {
+          .nav-menu li {
               clear: right;
               float: right;
               margin: 7.5px 0;
           }
           
-          .banner {
+          header {
               font-size: 1rem;
           }
       }
       
       @media only screen and (max-width: 350px) {
-          .header-logo h1, .banner h1 {
+          .nav-logo h1, header h1 {
               display: none;
           }
       }
       
       @media only screen and (max-height: calc(425px * 0.5625)) {
-          .banner {
+          header {
               padding-top: 50px;
           }
       }
     </style>
   </head>
   <body>
-    <!-- Header structure -->
-    <header>
-      <nav class="container">
-        <a class="header-logo" href="#" title="Scroll to top">
+    <!-- Navigation bar structure -->
+    <nav class="nav-bar">
+      <div class="container">
+        <a class="nav-logo" href="#" title="Scroll to top">
           <img src="./res/assets/img/logos/Sweetboy13735.png" alt="Sweetboy13735 logo" />
           <h1>Sweetboy13735</h1>
         </a>
-        <button class="header-menu-toggle" onclick="toggleHeaderMenu()">☰</button>
-        <ul class="header-menu">
+        <button class="nav-menu-toggle" onclick="toggleNavMenu()">☰</button>
+        <ul class="nav-menu">
           <li>
             <a href="./about.html">About me</a>
           </li>
@@ -248,28 +248,24 @@
             <a href="./contact.html">Contact me</a>
           </li>
         </ul>
-      </nav>
-    </header>
-    
-    <!-- Main content structure -->
-    <main>
-      <div class="banner">
-        <div class="container">
-          <h1>Sweetboy13735</h1>
-          <p>Aspiring programmer, founder of <a class="hbi-wrapper" href="https://HyperByteIndustries.github.io">HyperByte Industries</a>, and a proud gamer.</p>
-        </div>
       </div>
-    </main>
+    </nav>
+    
+    <!-- Header structure -->
+    <header>
+      <div class="container">
+        <h1>Sweetboy13735</h1>
+        <p>Aspiring programmer, founder of <a class="hbi-wrapper" href="https://HyperByteIndustries.github.io">HyperByte Industries</a>, and a proud gamer.</p>
+      </div>
+    </header>
     
     <!-- Scripts -->
     <script type="text/javascript">
-      var headerMenuVisible = false;
-      var headerMenu = document.getElementsByClassName("header-menu")[0];
+      var navMenuVisible = false, navMenu = document.getElementsByClassName("nav-menu")[0];
       
-      function toggleHeaderMenu() {
-          headerMenu.style.right = headerMenuVisible ? "-151.86px" : "25px";
-          
-          headerMenuVisible = !headerMenuVisible;
+      function toggleNavMenu() {
+          navMenu.style.right = navMenuVisible ? "-151.86px" : "25px";
+          navMenuVisible = !navMenuVisible;
       }
     </script>
   </body>
