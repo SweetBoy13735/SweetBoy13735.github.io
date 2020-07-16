@@ -1,0 +1,261 @@
+/* Global styles */
+@font-face {
+    font-family: "Pixel EX";
+    src: url("../assets/fonts/pixelex.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: whitesmoke;
+    font-family: "Pixel EX", sans-serif;
+    font-size: 20px;
+    line-height: 1.25;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #9F00BF;
+    text-decoration: none;
+    transition: all 350ms ease 50ms;
+}
+
+a:hover {
+    color: #D715FF;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a.hbi-wrapper {
+    color: #040;
+}
+
+a.hbi-wrapper:hover {
+    color: #080;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 10px;
+    width: 1250px;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation bar styles */
+nav.nav-bar {
+    background-color: darkgray;
+    border-bottom: 5px solid lightgray;
+    border-radius: 0 0 25px 25px;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+a.nav-logo {
+    color: #9F00BF;
+    width: 405px;
+}
+
+button.nav-menu-toggle {
+    color: whitesmoke;
+    display: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+ul.nav-menu {
+    width: calc(100% - 475px);
+}
+
+.nav-logo img {
+    height: 75px;
+    width: auto;
+}
+
+.nav-logo h1 {
+    margin: 0;
+}
+
+button.nav-menu-toggle, .nav-menu a {
+    background-color: gray;
+    border: 1px solid dimgray;
+    border-radius: 5px;
+}
+
+.nav-menu a {
+    padding: 10px;
+}
+
+.nav-menu a:hover {
+    background-color: slategray;
+    border-color: black;
+    border-radius: 10px;
+}
+
+/* Header styles */
+header {
+    align-items: center;
+    background: url("../assets/img/banners/Channel_art_background.png") center / cover no-repeat;
+    border-bottom: 5px solid lightgray;
+    display: flex;
+    font-size: 1.5rem;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Main content styles */
+a.back-to-top {
+    background-color: gray;
+    border: 5px solid lightgray;
+    border-radius: 10px;
+    float: right;
+    padding: 10px;
+}
+
+a.back-to-top:hover {
+    background-color: dimgray;
+    border-color: gray;
+}
+
+/* Footer styles */
+footer {
+    background-color: dimgray;
+    border-top: 5px solid lightgray;
+    padding: 15px;
+}
+
+footer nav {
+    padding-left: 10px;
+}
+
+ul.social-icons {
+    margin: 16px 0;
+    flex-wrap: wrap;
+}
+
+.social-icons li {
+    padding: 0 16px;
+}
+
+.social-icons img {
+    height: 32px;
+    width: auto;
+}
+
+.sitemap .flex {
+    justify-content: space-evenly;
+}
+
+.sitemap h3 {
+    color: whitesmoke;
+    margin: 0.5em 0;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1250px) {
+    .container {
+        width: 95%;
+    }
+    
+    ul.nav-menu {
+        width: calc(100% - 425px);
+    }
+}
+
+@media only screen and (max-width: 1049px) {
+    a.nav-logo {
+        width: fit-content;
+    }
+    
+    ul.nav-menu {
+        width: calc(100% - 125px);
+    }
+    
+    .nav-logo h1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    
+    nav.nav-bar {
+        height: 50px;
+    }
+    
+    ul.nav-menu {
+        width: calc(100% - 75px);
+    }
+    
+    .nav-logo img {
+        height: 25px;
+    }
+    
+    .nav-menu a {
+        padding: 7.5px;
+    }
+}
+
+@media only screen and (max-width: 541px) {
+    a.nav-logo {
+        width: 275px;
+    }
+    
+    button.nav-menu-toggle {
+        display: inline-block;
+    }
+    
+    ul.nav-menu {
+        display: block;
+        position: fixed;
+        right: -151.86px;
+        top: 55px;
+        transition: right 200ms ease;
+        width: fit-content;
+    }
+    
+    .nav-logo h1 {
+        display: block;
+    }
+    
+    .nav-menu li {
+        clear: right;
+        float: right;
+        margin: 7.5px 0;
+    }
+    
+    header {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 356px) {
+    .nav-logo h1, header h1, footer h1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: calc(425px * 0.5625)) {
+    header {
+        padding-top: 50px;
+    }
+}
