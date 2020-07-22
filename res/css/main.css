@@ -46,6 +46,18 @@ a.hbi-wrapper:hover {
     color: #080;
 }
 
+a.scroll {
+    background-color: gray;
+    border: 5px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+a.scroll:hover {
+    background-color: dimgray;
+    border-color: gray;
+}
+
 .container {
     margin: 0 auto;
     padding: 10px;
@@ -121,17 +133,8 @@ header {
 }
 
 /* Main content styles */
-a.back-to-top {
-    background-color: gray;
-    border: 5px solid lightgray;
-    border-radius: 10px;
+main a.scroll {
     float: right;
-    padding: 10px;
-}
-
-a.back-to-top:hover {
-    background-color: dimgray;
-    border-color: gray;
 }
 
 /* Footer styles */
@@ -146,8 +149,9 @@ footer nav {
 }
 
 ul.social-icons {
-    margin: 16px 0;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 16px 0;
 }
 
 .social-icons li {
