@@ -133,8 +133,28 @@ header {
 }
 
 /* Main content styles */
+main {
+    color: black;
+}
+
+section {
+    text-align: center;
+}
+
 main a.scroll {
     float: right;
+}
+
+section h2 {
+    margin-top: 100px;
+}
+
+section article {
+    background-color: rgb(144, 144, 144);
+    border-left: 5px dashed lightgray;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: left;
 }
 
 /* Footer styles */
