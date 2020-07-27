@@ -152,9 +152,43 @@ section h2 {
 section article {
     background-color: rgb(144, 144, 144);
     border-left: 5px dashed lightgray;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding: 10px;
     text-align: left;
+}
+
+#hbi {
+    background-color: black !important;
+    color: #060;
+}
+
+#pxpa {
+    background: url("../assets/img/logos/Pixel_Paintballers.png") center / cover no-repeat;
+    color: white;
+}
+
+#tpdc {
+    background: url("../assets/img/logos/TPDC.gif") center / cover no-repeat;
+    color: #F8F8F8;
+}
+
+#projects article .flex {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#projects .project {
+    background-color: gray;
+    border: 5px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 30%;
+}
+
+#projects .project h4 {
+    border-bottom: 3px solid lightgray;
 }
 
 /* Footer styles */
