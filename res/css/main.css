@@ -157,6 +157,25 @@ section article {
     text-align: left;
 }
 
+article .flex {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: gray;
+    border: 5px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 30%;
+}
+
+.card h4 {
+    border-bottom: 3px solid lightgray;
+}
+
 #hbi {
     background-color: black !important;
     color: #060;
@@ -170,25 +189,6 @@ section article {
 #tpdc {
     background: url("../assets/img/logos/TPDC.gif") center / cover no-repeat;
     color: #F8F8F8;
-}
-
-#projects article .flex {
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#projects .project {
-    background-color: gray;
-    border: 5px solid lightgray;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding: 10px;
-    width: 30%;
-}
-
-#projects .project h4 {
-    border-bottom: 3px solid lightgray;
 }
 
 /* Footer styles */
