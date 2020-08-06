@@ -170,11 +170,20 @@ article .flex {
     margin-bottom: 15px;
     padding: 10px;
     width: 30%;
+    overflow-x: auto;
 }
 
 .card h4 {
-    border-bottom: 3px solid lightgray;
     text-align: center;
+}
+
+.card h4::after {
+    background-color: lightgray;
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 5px;
+    width: 100%;
 }
 
 #hbi {
