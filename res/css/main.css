@@ -39,7 +39,7 @@ nav ul {
 }
 
 a.hbi-wrapper {
-    color: #040;
+    color: #060;
 }
 
 a.hbi-wrapper:hover {
@@ -272,6 +272,14 @@ ul.social-icons {
     .nav-menu a {
         padding: 7.5px;
     }
+    
+    section h2 {
+        margin-top: 50px;
+    }
+    
+    .card {
+        width: 45%;
+    }
 }
 
 @media only screen and (max-width: 541px) {
@@ -304,6 +312,10 @@ ul.social-icons {
     
     header {
         font-size: 1rem;
+    }
+    
+    .card {
+        width: 75%;
     }
 }
 
