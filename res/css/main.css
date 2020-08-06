@@ -187,8 +187,8 @@ article .flex {
 }
 
 #hbi {
-    background-color: black !important;
-    color: #060;
+    background: url("../assets/img/logos/HBI.png") center / cover no-repeat;
+    color: whitesmoke;
 }
 
 #pxpa {
