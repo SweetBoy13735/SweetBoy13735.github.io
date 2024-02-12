@@ -3,10 +3,18 @@
 /* What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, Kroc Camen, and the H5BP dev community and team. */
 
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+
+@font-face {
+	font-family: "FixedSys Excelsior";
+	src: url("../assets/fonts/FSEX302.ttf") format("truetype");
+}
+
 /* #region Base styles: opinionated defaults */
 html {
-	color: #222;
-	font: normal 20px / 1.25 sans-serif;
+	background-color: var(--night-black);
+	color: var(--white-smoke);
+	font: 300 20px / 1.25 "Open Sans", sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -27,7 +35,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid currentColor;
 	margin: 1em 0;
 	padding: 0;
 }
@@ -61,6 +69,9 @@ textarea {
 
 :root {
 	/* Colour palette */
+	--night-red: #990000;
+	--night-black: #141414;
+	--white-smoke: whitesmoke;
 }
 
 h1 {
@@ -69,6 +80,10 @@ h1 {
 
 h2, h3, h4, h5, h6 {
 	margin-bottom: .5em;
+}
+
+h2, h3, h4 {
+	font-family: "IBM Plex Mono", monospace;
 }
 
 h2 {
@@ -85,10 +100,12 @@ h4 {
 
 h5 {
 	font-size: 1.5em;
+	font-weight: 800;
 }
 
 h6 {
 	font-size: 1.25em;
+	font-stretch: condensed;
 }
 
 p {
@@ -96,7 +113,19 @@ p {
 }
 
 a, button {
+	color: var(--night-red);
+	cursor: pointer;
+	font-weight: normal;
 	transition-property: all;
+}
+
+a:hover {
+	filter: brightness(250%);
+	text-decoration: none;
+}
+
+a:active {
+	color: var(--white-smoke);
 }
 /* #endregion */
 
