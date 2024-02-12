@@ -4,3 +4,6 @@
 node_modules
 dist
 .cache
+
+# VS Code problem config
+.hintrc
