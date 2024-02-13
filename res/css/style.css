@@ -171,7 +171,13 @@ nav.bar {
 	justify-content: space-around;
 	height: 75px;
 	position: fixed;
+	transition-property: all;
 	width: 100%;
+}
+
+nav.bar.scrolled {
+	background-color: var(--white-smoke);
+	color: var(--night-red);
 }
 
 nav.bar a {
