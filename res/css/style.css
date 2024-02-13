@@ -150,9 +150,47 @@ a:active {
 /* #endregion */
 
 /* #region Components */
+nav[aria-label*="menu"] li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 .625rem;
+}
+
+nav[aria-label*="menu"] li:first-child {
+	margin-left: 0;
+}
+
+nav[aria-label*="menu"] li:last-child {
+	margin-right: 0;
+}
 /* #endregion */
 
 /* #region Navigation bar */
+nav.bar {
+	color: var(--white-smoke);
+	justify-content: space-around;
+	height: 75px;
+	position: fixed;
+	width: 100%;
+}
+
+nav.bar a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+nav.bar a:hover {
+	filter: none;
+	text-decoration: underline;
+}
+
+.logo img {
+	height: 75px;
+}
+
+nav.bar .toggle {
+	display: none;
+}
 /* #endregion */
 
 /* #region Header */
