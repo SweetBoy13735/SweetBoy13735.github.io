@@ -71,6 +71,7 @@ textarea {
 	/* Colour palette */
 	--night-red: #990000;
 	--night-black: #141414;
+	--night-black-overlay: #14141499;
 	--white-smoke: whitesmoke;
 }
 
@@ -119,12 +120,32 @@ a, button {
 	transition-property: all;
 }
 
-a:hover {
+button, a.button {
+	border: 2.5px solid currentColor;
+	border-radius: .25rem;
+	padding: .25rem .5rem;
+	display: inline-block;
+}
+
+button {
+	background: none;
+	font: inherit;
+	font-weight: normal;
+}
+
+a:hover, button:hover {
 	filter: brightness(250%);
+}
+
+button:hover, a.button:hover {
+	border-radius: .5rem;
+}
+
+a:hover {
 	text-decoration: none;
 }
 
-a:active {
+a:active, button:active {
 	color: var(--white-smoke);
 }
 /* #endregion */
@@ -150,6 +171,10 @@ a:active {
 /* #endregion */
 
 /* #region Components */
+a.button {
+	text-decoration: none;
+}
+
 nav[aria-label*="menu"] li {
 	display: inline-block;
 	list-style: none;
@@ -206,6 +231,33 @@ nav.bar .toggle {
 /* #endregion */
 
 /* #region Footer */
+/* #endregion */
+
+/* #region Responsive styling */
+@media only screen and (max-width: 842px) {
+	nav.bar ul {
+		align-self: flex-start;
+	}
+
+	nav.bar li:not(.logo) {
+		background-color: var(--night-black-overlay);
+		color: var(--white-smoke);
+		display: block;
+		height: 0;
+		margin: 0;
+		overflow: hidden;
+		text-align: center;
+		transition-property: height;
+	}
+
+	nav.bar .toggle {
+		display: block;
+	}
+
+	nav.bar .toggle:active {
+		color: currentColor;
+	}
+}
 /* #endregion */
 /* #endregion */
 
