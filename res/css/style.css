@@ -71,6 +71,7 @@ textarea {
 	/* Colour palette */
 	--night-red: #900;
 	--night-black: #141414;
+	--night-black-overlay: #14141499;
 }
 
 h1 {
@@ -114,17 +115,37 @@ p {
 a, button {
 	color: var(--night-red);
 	cursor: pointer;
-	font-weight: normal;
+	font-weight: normal !important;
 	transition-property: all;
 }
 
-a:hover {
+button {
+	background-color: transparent;
+	border: .125rem solid currentColor;
+	border-radius: .25rem;
+	font: inherit;
+	line-height: 1;
+	padding: .375rem .5rem;
+}
+
+a:hover, button:hover {
 	filter: brightness(2);
+}
+
+a:hover {
 	text-decoration: none;
+}
+
+button:hover {
+	border-radius: .5rem;
 }
 
 a:active {
 	color: whitesmoke;
+}
+
+button:active {
+	background-color: whitesmoke;
 }
 /* #endregion */
 
@@ -149,9 +170,54 @@ a:active {
 /* #endregion */
 
 /* #region Components */
+nav[aria-label*="menu"] li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 .625rem;
+}
+
+nav[aria-label*="menu"] li:first-child {
+	margin-left: 0;
+}
+
+nav[aria-label*="menu"] li:last-child {
+	margin-right: 0;
+}
 /* #endregion */
 
 /* #region Navigation bar */
+nav.bar {
+	color: whitesmoke;
+	height: 75px;
+	justify-content: space-around;
+	position: fixed;
+	transition-property: all;
+	width: 100%;
+}
+
+nav.bar.scrolled {
+	background-color: whitesmoke;
+	box-shadow: 0 5px 5px var(--night-black);
+	color: var(--night-red);
+}
+
+nav.bar a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+nav.bar a:hover {
+	filter: none;
+	text-decoration: underline;
+}
+
+nav.bar img {
+	height: 75px;
+}
+
+nav.bar button {
+	display: none;
+}
 /* #endregion */
 
 /* #region Header */
@@ -162,6 +228,31 @@ a:active {
 
 /* #region Footer */
 /* #endregion */
+
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 15px;
+	}
+
+	nav.bar ul {
+		align-self: flex-start;
+	}
+
+	nav.bar li:not(.logo) {
+		background-color: var(--night-black-overlay);
+		color: whitesmoke;
+		display: block;
+		height: 0;
+		margin: 0;
+		overflow-y: hidden;
+		text-align: center;
+		transition-property: height;
+	}
+
+	nav.bar button {
+		display: block;
+	}
+}
 /* #endregion */
 
 /* #region Helper classes */
