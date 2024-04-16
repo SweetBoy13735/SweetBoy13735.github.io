@@ -144,7 +144,7 @@ a:hover {
 	text-decoration: none;
 }
 
-button:hover {
+button:hover, a.button:hover {
 	border-radius: .5rem;
 }
 
@@ -240,23 +240,30 @@ header, header img {
 
 header {
 	background: center / cover no-repeat url("../assets/img/Banner.png");
-	font-size: .85rem;
 	height: 100vh;
 	text-align: right;
 }
 
-header .container {
+header>.container {
 	max-width: 1125px;
+}
+
+header h1 {
+	font-size: 2em;
+	margin-bottom: 1rem;
 }
 
 header nav {
 	background-color: whitesmoke;
 	box-shadow: 0 0 .5rem .5rem whitesmoke;
-	margin-top: 1rem;
 }
 
 header ul {
 	flex-wrap: wrap;
+}
+
+header .flex li {
+	margin: 0;
 }
 /* #endregion */
 
