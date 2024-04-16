@@ -268,6 +268,17 @@ header .flex li {
 /* #endregion */
 
 /* #region Main content */
+main h2 {
+	text-align: center;
+}
+
+section {
+	padding: 75px 0 50px;
+}
+
+section+section {
+	border-top: 1px solid currentColor;
+}
 /* #endregion */
 
 /* #region Footer */
