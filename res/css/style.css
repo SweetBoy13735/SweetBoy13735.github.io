@@ -282,6 +282,15 @@ section+section {
 /* #endregion */
 
 /* #region Footer */
+footer {
+	background: center / cover no-repeat url("../assets/img/Banner.png");
+	box-shadow: 0 -10px 10px var(--night-red);
+}
+
+footer>.container {
+	background-color: var(--night-black-overlay);
+	padding: 1.25rem;
+}
 /* #endregion */
 
 @media only screen and (max-width: 768px) {
