@@ -123,7 +123,7 @@ button, a.button {
 	border: .125rem solid currentColor;
 	border-radius: .25rem;
 	line-height: 1;
-	padding: .375rem .5rem;
+	padding: .5rem;
 }
 
 button {
@@ -133,19 +133,20 @@ button {
 
 a.button {
 	display: inline-block;
-	padding: .5rem;
-}
-
-a:hover, button:hover {
-	filter: brightness(2);
+	text-decoration: none;
 }
 
 a:hover {
+	filter: brightness(2);
 	text-decoration: none;
 }
 
 button:hover, a.button:hover {
 	border-radius: .5rem;
+}
+
+a.button:hover {
+	filter: none;
 }
 
 a:active {
@@ -231,6 +232,10 @@ nav.bar img {
 nav.bar button {
 	display: none;
 }
+
+nav.bar.scrolled button:active {
+	background-color: var(--night-black-overlay);
+}
 /* #endregion */
 
 /* #region Header */
@@ -274,10 +279,33 @@ main h2 {
 
 section {
 	padding: 75px 0 50px;
+	clear: left;
 }
 
 section+section {
 	border-top: 1px solid currentColor;
+}
+
+#about aside, #about img {
+	float: left;
+}
+
+#about aside {
+	box-shadow: inset 0 0 5px 5px var(--night-red);
+	padding: .75rem;
+	width: 300px;
+}
+
+#about img {
+	height: 6.25rem;
+}
+
+#about aside p {
+	margin: 0;
+}
+
+#about aside nav {
+	margin-top: .5rem;
 }
 /* #endregion */
 

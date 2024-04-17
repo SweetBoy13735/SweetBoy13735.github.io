@@ -3,6 +3,9 @@ const navBar = document.querySelector("nav.bar"), navBarMenu = navBar.querySelec
 
 // State management
 let navBarMenuVisible = false;
+const age = Math.floor((Date.now() - Date.parse("19 Jul 2002 00:00:00 GMT")) / 31536000000);
+
+document.querySelector("#about .age").innerHTML = age;
 
 function setNavBarMenuVisible(visible) {
 	navBarMenuVisible = visible;
