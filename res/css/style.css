@@ -239,7 +239,7 @@ header, header img {
 }
 
 header {
-	background: center / cover no-repeat url("../assets/img/Banner.png");
+	background: center / cover no-repeat url("../assets/img/backgrounds/Banner.png");
 	height: 100vh;
 	text-align: right;
 }
@@ -283,7 +283,7 @@ section+section {
 
 /* #region Footer */
 footer {
-	background: center / cover no-repeat url("../assets/img/Banner.png");
+	background: center / cover no-repeat url("../assets/img/backgrounds/Banner.png");
 	box-shadow: 0 -10px 10px var(--night-red);
 }
 
