@@ -279,7 +279,6 @@ main h2 {
 
 section {
 	padding: 75px 0 50px;
-	clear: left;
 }
 
 section+section {
@@ -291,9 +290,10 @@ section+section {
 }
 
 #about aside {
-	box-shadow: inset 0 0 5px 5px var(--night-red);
-	padding: .75rem;
-	width: 300px;
+	box-shadow: inset 0 0 .25rem .25rem var(--night-red);
+	padding: .5rem;
+	margin: 0 .5rem .5rem 0;
+	min-width: 15rem;
 }
 
 #about img {
@@ -307,12 +307,16 @@ section+section {
 #about aside nav {
 	margin-top: .5rem;
 }
+
+#about .grid {
+	clear: left;
+}
 /* #endregion */
 
 /* #region Footer */
 footer {
 	background: center / cover no-repeat url("../assets/img/backgrounds/Banner.png");
-	box-shadow: 0 -10px 10px var(--night-red);
+	box-shadow: 0 -.5rem .5rem var(--night-red);
 }
 
 footer>.container {
@@ -343,6 +347,13 @@ footer>.container {
 
 	nav.bar button {
 		display: block;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	#about aside {
+		min-width: 100%;
+		margin: 0 0 .5rem 0;
 	}
 }
 /* #endregion */
