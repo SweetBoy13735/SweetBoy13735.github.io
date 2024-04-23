@@ -5,6 +5,7 @@ const navBar = document.querySelector("nav.bar"), navBarMenu = navBar.querySelec
 let navBarMenuVisible = false;
 const age = Math.floor((Date.now() - Date.parse("19 Jul 2002 00:00:00 GMT")) / 31536000000);
 
+navBar.classList.toggle("scrolled", window.scrollY > 0);
 document.querySelector("#about .age").innerHTML = age;
 
 function setNavBarMenuVisible(visible) {
