@@ -190,15 +190,10 @@ a.button:active {
 nav[aria-label*="menu"] li {
 	display: inline-block;
 	list-style: none;
-	margin: 0 .625rem;
 }
 
-nav[aria-label*="menu"] li:first-child {
-	margin-left: 0;
-}
-
-nav[aria-label*="menu"] li:last-child {
-	margin-right: 0;
+nav[aria-label*="menu"] li+li {
+	margin-left: 1.25rem;
 }
 /* #endregion */
 
@@ -267,12 +262,8 @@ header nav {
 	box-shadow: 0 0 .5rem .5rem whitesmoke;
 }
 
-header ul {
-	flex-wrap: wrap;
-}
-
-header .flex li {
-	margin: 0;
+header li+li {
+	margin: 0 !important;
 }
 /* #endregion */
 
@@ -289,16 +280,24 @@ section+section {
 	border-top: 1px solid currentColor;
 }
 
-#about aside, #about img {
-	float: left;
-}
-
-#about aside, #services article {
+section:not(#about) article, #about>aside {
 	box-shadow: inset 0 0 .25rem .25rem var(--night-red);
 	padding: .5rem;
 }
 
-#about aside {
+section:not(#about) article {
+	transition-property: box-shadow;
+}
+
+section:not(#about) article:hover {
+	box-shadow: inset 0 0 .25rem .375rem var(--night-red);
+}
+
+#about>aside, #about img {
+	float: left;
+}
+
+#about>aside {
 	margin: 0 .5rem .5rem 0;
 	min-width: 15rem;
 }
@@ -307,24 +306,20 @@ section+section {
 	height: 6.25rem;
 }
 
-#about aside p {
+#about>aside>p {
 	margin: 0;
 }
 
-#about aside nav {
+#about>aside>nav {
 	margin-top: .5rem;
 }
 
-#about .grid {
+#about>.grid {
 	clear: left;
 }
 
-#services article {
-	transition-property: box-shadow;
-}
-
-#services article:hover {
-	box-shadow: inset 0 0 .25rem .375rem var(--night-red);
+#portfolio article h4 {
+	border-bottom: .125rem solid currentColor;
 }
 /* #endregion */
 
