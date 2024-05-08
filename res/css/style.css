@@ -116,6 +116,10 @@ em {
 	font-weight: normal;
 }
 
+figcaption {
+	font-weight: 500;
+}
+
 a, button {
 	color: var(--night-red);
 	cursor: pointer;
@@ -272,25 +276,25 @@ main h2 {
 	text-align: center;
 }
 
+main .card {
+	box-shadow: inset 0 0 .25rem .25rem var(--night-red);
+	padding: .75rem;
+}
+
+section:not(#about) .card {
+	transition-property: box-shadow;
+}
+
+section:not(#about) .card:hover {
+	box-shadow: inset 0 0 .25rem .375rem var(--night-red);
+}
+
 section {
 	padding: 75px 0 50px;
 }
 
 section+section {
 	border-top: 1px solid currentColor;
-}
-
-section:not(#about) article, #about>aside {
-	box-shadow: inset 0 0 .25rem .25rem var(--night-red);
-	padding: .5rem;
-}
-
-section:not(#about) article {
-	transition-property: box-shadow;
-}
-
-section:not(#about) article:hover {
-	box-shadow: inset 0 0 .25rem .375rem var(--night-red);
 }
 
 #about>aside, #about img {
@@ -320,6 +324,19 @@ section:not(#about) article:hover {
 
 #portfolio article h4 {
 	border-bottom: .125rem solid currentColor;
+}
+
+#testimonals blockquote::before, #testimonals blockquote::after {
+	color: var(--night-red);
+	content: "\"";
+	display: block;
+	font: normal 2em / 1 "FixedSys Excelsior", monospace;
+	font-style: italic;
+}
+
+#testimonals blockquote em {
+	position: relative;
+	top: -.5rem;
 }
 /* #endregion */
 
