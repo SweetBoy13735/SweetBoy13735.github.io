@@ -281,6 +281,10 @@ main .card {
 	padding: .75rem;
 }
 
+main .card .title {
+	border-bottom: .125rem solid currentColor;
+}
+
 section:not(#about) .card {
 	transition-property: box-shadow;
 }
@@ -320,10 +324,6 @@ section+section {
 
 #about>.grid {
 	clear: left;
-}
-
-#portfolio article h4 {
-	border-bottom: .125rem solid currentColor;
 }
 
 #testimonals blockquote::before, #testimonals blockquote::after {
