@@ -272,6 +272,10 @@ header li+li {
 /* #endregion */
 
 /* #region Main content */
+main {
+	box-shadow: inset 0 1rem .5rem -.5rem var(--night-red), inset 0 -1rem .5rem -.5rem var(--night-red);
+}
+
 main h2 {
 	text-align: center;
 }
@@ -343,7 +347,6 @@ section+section {
 /* #region Footer */
 footer {
 	background: center / cover no-repeat url("../assets/img/backgrounds/Banner.png");
-	box-shadow: 0 -.5rem .5rem var(--night-red);
 }
 
 footer>.container {
