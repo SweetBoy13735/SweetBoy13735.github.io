@@ -1,0 +1,499 @@
+/*! HTML5 Boilerplate v9.0.0 | MIT License | https://html5boilerplate.com/ */
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/* What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, Kroc Camen, and the H5BP dev community and team. */
+
+/* #region Base styles: opinionated defaults */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,700;1,700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+
+@font-face {
+	font-family: "FixedSys Excelsior";
+	src: url("../assets/fonts/FSEX302.ttf") format("truetype");
+}
+
+html {
+	background-color: var(--night-black);
+	color: whitesmoke;
+	font: 300 20px / 1.25 "Open Sans", sans-serif;
+	scroll-behavior: smooth;
+}
+
+/* Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301
+ * Customize the background color to match your design. */
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/* A better looking default horizontal rule */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid currentColor;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/* Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers: https://github.com/h5bp/html5-boilerplate/issues/440 */
+canvas, iframe, img, svg, video {
+	vertical-align: middle;
+}
+
+/* Remove default fieldset styles. */
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* Allow only vertical resizing of textareas. */
+textarea {
+	resize: vertical;
+}
+/* #endregion */
+
+/* #region Author's custom styles */
+/* #region Global styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: none .25s ease;
+}
+
+:root {
+	/* Colour palette */
+	--night-red: #900;
+	--night-black: #141414;
+	--night-black-overlay: #14141499;
+}
+
+h1 {
+	font: normal 2.5em / 1 "FixedSys Excelsior", monospace;
+}
+
+h2, h3, h4, h5, h6 {
+	margin-bottom: .5em;
+}
+
+h2, h3, h4 {
+	font-family: "IBM Plex Mono", monospace;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.75em;
+}
+
+h5 {
+	font-size: 1.5em;
+	font-weight: 800;
+}
+
+h6 {
+	font-size: 1.25em;
+	font-stretch: condensed;
+}
+
+p {
+	margin: .5em 0;
+}
+
+em {
+	font-weight: normal;
+}
+
+figcaption {
+	font-weight: 500;
+}
+
+a, button {
+	color: var(--night-red);
+	cursor: pointer;
+	font-weight: normal !important;
+	transition-property: all;
+}
+
+button, a.button {
+	border: .125rem solid currentColor;
+	border-radius: .25rem;
+	line-height: 1;
+	padding: .5rem;
+}
+
+button {
+	background-color: transparent;
+	font: inherit;
+}
+
+a.button {
+	display: inline-block;
+	text-decoration: none;
+}
+
+a:hover {
+	filter: brightness(2);
+	text-decoration: none;
+}
+
+button:hover, a.button:hover {
+	border-radius: .5rem;
+}
+
+a.button:hover {
+	filter: none;
+}
+
+a:active {
+	color: whitesmoke;
+}
+
+button:active, a.button:active {
+	background-color: whitesmoke;
+}
+
+a.button:active {
+	color: var(--night-red);
+}
+/* #endregion */
+
+/* #region Lay-outs*/
+.flex {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1250px;
+	width: 95%;
+}
+
+.grid {
+	display: grid;
+	gap: .75rem;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+/* #endregion */
+
+/* #region Components */
+nav[aria-label*="menu"] li {
+	display: inline-block;
+	list-style: none;
+}
+
+nav[aria-label*="menu"] li+li {
+	margin-left: 1.25rem;
+}
+/* #endregion */
+
+/* #region Navigation bar */
+nav.bar {
+	color: whitesmoke;
+	height: 75px;
+	justify-content: space-around;
+	position: fixed;
+	transition-property: all;
+	width: 100%;
+	z-index: 1;
+}
+
+nav.bar.scrolled {
+	background-color: whitesmoke;
+	box-shadow: 0 5px 5px var(--night-black);
+	color: var(--night-red);
+}
+
+nav.bar a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+nav.bar a:hover {
+	filter: none;
+	text-decoration: underline;
+}
+
+nav.bar img {
+	height: 75px;
+}
+
+nav.bar button {
+	display: none;
+}
+
+nav.bar.scrolled button:active {
+	background-color: var(--night-black-overlay);
+}
+/* #endregion */
+
+/* #region Header */
+header, header img {
+	width: 100%;
+}
+
+header {
+	background: center / cover no-repeat url("../assets/img/backgrounds/Banner.png");
+	height: 100vh;
+	text-align: right;
+}
+
+header>.container {
+	max-width: 1125px;
+}
+
+header h1 {
+	font-size: 2em;
+	margin-bottom: 1rem;
+}
+
+header nav {
+	background-color: whitesmoke;
+	box-shadow: 0 0 .5rem .5rem whitesmoke;
+}
+
+header li+li {
+	margin: 0 !important;
+}
+/* #endregion */
+
+/* #region Main content */
+main h2 {
+	text-align: center;
+}
+
+main .card {
+	box-shadow: inset 0 0 .25rem .25rem var(--night-red);
+	padding: .75rem;
+}
+
+main .card .title {
+	border-bottom: .125rem solid currentColor;
+}
+
+section:not(#about) .card {
+	transition-property: box-shadow;
+}
+
+section:not(#about) .card:hover {
+	box-shadow: inset 0 0 .25rem .375rem var(--night-red);
+}
+
+section {
+	padding: 75px 0 50px;
+}
+
+section+section {
+	border-top: 1px solid currentColor;
+}
+
+#about>aside, #about img {
+	float: left;
+}
+
+#about>aside {
+	margin: 0 .5rem .5rem 0;
+	min-width: 15rem;
+}
+
+#about img {
+	height: 6.25rem;
+}
+
+#about>aside>p {
+	margin: 0;
+}
+
+#about>aside>nav {
+	margin-top: .5rem;
+}
+
+#about>.grid {
+	clear: left;
+}
+
+#testimonals blockquote::before, #testimonals blockquote::after {
+	color: var(--night-red);
+	content: "\"";
+	display: block;
+	font: normal 2em / 1 "FixedSys Excelsior", monospace;
+	font-style: italic;
+}
+
+#testimonals blockquote em {
+	position: relative;
+	top: -.5rem;
+}
+/* #endregion */
+
+/* #region Footer */
+footer {
+	background: center / cover no-repeat url("../assets/img/backgrounds/Banner.png");
+	box-shadow: 0 -.5rem .5rem var(--night-red);
+}
+
+footer>.container {
+	background-color: var(--night-black-overlay);
+	padding: 1.25rem;
+}
+/* #endregion */
+
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 15px;
+	}
+
+	nav.bar ul {
+		align-self: flex-start;
+	}
+
+	nav.bar li:not(.logo) {
+		background-color: var(--night-black-overlay);
+		color: whitesmoke;
+		display: block;
+		height: 0;
+		margin: 0;
+		overflow-y: hidden;
+		text-align: center;
+		transition-property: height;
+	}
+
+	nav.bar button {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	#about aside {
+		min-width: 100%;
+		margin: 0 0 .5rem 0;
+	}
+}
+/* #endregion */
+
+/* #region Helper classes */
+/* Hide visually and from screen readers */
+.hidden, [hidden] {
+	display: none !important;
+}
+
+/* Hide only visually, but have it available for screen readers: https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ * 1. For long content, line feeds are not interpreted as spaces and small width causes content to wrap 1 word per line: https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe */
+.visually-hidden {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px; 
+	/* 1 */
+}
+
+/* Extends the .visually-hidden class to allow the element to be focusable when navigated to via the keyboard: https://www.drupal.org/node/897638 */
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	white-space: inherit;
+	width: auto;
+}
+
+/* Hide visually and from screen readers, but maintain layout */
+.invisible {
+	visibility: hidden;
+}
+
+/* Clearfix: contain floats
+ * The use of `table` rather than `block` is only necessary if using `::before` to contain the top-margins of child elements. */
+.clearfix::before, .clearfix::after {
+	content: "";
+	display: table;
+}
+
+.clearfix::after {
+	clear: both;
+}
+/* #endregion */
+
+/* #region EXAMPLE Media Queries for Responsive Design */
+/* These examples override the primary ('mobile first') styles. Modify as content requires. */
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+/* #endregion */
+
+/* #region Print styles */
+/* Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/ ===================== */
+@media print {
+	*, *::before, *::after {
+		background: #fff !important;
+		color: #000 !important;
+		/* Black prints faster */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a, a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]::after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]::after {
+		content: " (" attr(title) ")";
+	}
+
+	/* Don't show links that are fragment identifiers, or use the `javascript:` pseudo protocol */
+	a[href^="#"]::after, a[href^="javascript:"]::after {
+		content: "";
+	}
+
+	pre {
+		white-space: pre-wrap !important;
+	}
+
+	pre, blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	tr, img {
+		page-break-inside: avoid;
+	}
+
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2, h3 {
+		page-break-after: avoid;
+	}
+}
+/* #endregion */
