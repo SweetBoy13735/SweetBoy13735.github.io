@@ -1,143 +1,301 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <!-- Site metadata -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="author" content="Ramone R. A. Graham" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Aspiring programmer, founder of HyperByte Industries, and a proud gamer. This is the official site of Sweetboy13735!" />
-    <meta name="keywords" content="Sweetboy13735" />
-    <meta name="google-site-verification" content="DIjBkBqBAJnJuYSA9EaDUy30FQbIpkZxwLiIpOVUz6M" />
-    
-    <!-- Page title -->
-    <title>Sweetboy13735 | Official Site</title>
-    
-    <!-- Resource links -->
-    <link href="./favicon.ico" type="image/x-icon "rel="icon" />
-    <link href="./favicon.ico" type="image/x-icon "rel="shortcut icon" />
-    <link href="./res/css/main.css" type="text/css" rel="stylesheet" />
-    
-    <!-- Font Awesome script -->
-    <script src="https://kit.fontawesome.com/357d82ad3b.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <!-- Navigation bar structure -->
-    <nav class="nav-bar">
-      <div class="flex container">
-        <a class="flex nav-logo" href="#" title="Scroll to top">
-          <img src="./res/assets/img/logos/Sweetboy13735.png" alt="Sweetboy13735 logo" />
-          <h1>Sweetboy13735</h1>
-        </a>
-        <button class="nav-menu-toggle" onclick="toggleNavMenu()">☰</button>
-        <ul class="flex nav-menu">
-          <li>
-            <a href="./about.html">About me</a>
-          </li>
-          <li>
-            <a href="./projects.html">My projects</a>
-          </li>
-          <li>
-            <a href="./contact.html">Contact me</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    
-    <!-- Header structure -->
-    <header>
-      <div class="container">
-        <h1>Sweetboy13735</h1>
-        <p>Aspiring programmer, founder of <a class="hbi-wrapper" href="https://HyperByteIndustries.github.io">HyperByte Industries</a>, and a proud gamer.</p>
-      </div>
-    </header>
-    
-    <!-- Main content structure -->
-    <main>
-      <a class="scroll" href="#">Back to top <i class="fas fa-chevron-up"></i></a>
-    </main>
-    
-    <!-- Footer structure -->
-    <footer>
-      <nav class="social-media">
-        <h2>Follow me</h2>
-        <ul class="flex social-icons">
-          <li>
-            <a href="https://github.com/Sweetboy13735" target="_blank" title="Check out my GitHub account!">
-              <img src="./res/assets/img/icons/GitHub.png" alt="GitHub icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/Sweetboy13735" target="_blank" title="Check out my LinkedIn profile!">
-              <img src="./res/assets/img/icons/LinkedIn.png" alt="LinkedIn icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UChx0vGLiKDYXKs_DxgDBYHg" target="_blank" title="Check out my YouTube channel!">
-              <img src="./res/assets/img/icons/YouTube.png" alt="YouTube icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitch.tv/Sweetboy13735" target="_blank" title="Check out my Twitch channel!">
-              <img src="./res/assets/img/icons/Twitch.png" alt="Twitch icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/Sweetboy13735" target="_blank" title="Check out my Twitter profile!">
-              <img src="./res/assets/img/icons/Twitter.png" alt="Twitter icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/Sweetboy13735" target="_blank" title="Check out my Instagram page!">
-              <img src="./res/assets/img/icons/Instagram.png" alt="Instagram icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/Sweetboy13735" target="_blank" title="Check out my Facebook page!">
-              <img src="./res/assets/img/icons/Facebook.png" alt="Facebook icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.reddit.com/user/Sweetboy13735" target="_blank" title="Check out my Reddit profile!">
-              <img src="./res/assets/img/icons/Reddit.png" alt="Reddit icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.snapchat.com/add/Sweetboy13735" target="_blank" title="Check out my Snapchat account!">
-              <img src="./res/assets/img/icons/Snapchat.png" alt="Snapchat icon" />
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <hr />
-      <nav class="sitemap">
-        <h2>Sitemap</h2>
-        <div class="flex container">
-          <ul class="footer-menu">
-            <li>
-              <a href="#">
-                <h3>Main page</h3>
-              </a>
-            </li>
-            <li>
-              <a href="./about.html">About me</a>
-            </li>
-            <li>
-              <a href="./projects.html">My projects</a>
-            </li>
-            <li>
-              <a href="./contact.html">Contact me</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <hr />
-      <div class="copyright">
-        <h1>Sweetboy13735</h1>
-        <p>Website design and banners are &copy; Ramone R. A. Graham (A.K.A. <a href="#">Sweetboy13735</a>). All social media icons are copyright of their respective companies.</p>
-      </div>
-    </footer>
-    
-    <!-- Scripts -->
-    <script src="./res/js/app.js" type="text/javascript"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+
+		<!-- #region Page metadata -->
+		<meta name="author" content="Ramone Graham" />
+		<meta name="description" content="Technomancer. Night-rider. Gamer. The is the official site of SweetBoy!" />
+		<meta name="google-site-verification" content="DIjBkBqBAJnJuYSA9EaDUy30FQbIpkZxwLiIpOVUz6M" />
+		<meta name="keywords" content="SweetBoy, SweetBoy13735, Ramone Graham, technomancer, night-rider, gamer, portfolio" />
+		<meta name="theme-color" content="#990000" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:description" content="Technomancer. Night-rider. Gamer." />
+		<meta property="og:image" content="https://SweetBoy13735.GitHub.io/res/assets/img/logos/Avatar.png" />
+		<meta property="og:image:alt" content="SweetBoy avatar logo">
+		<meta property="og:title" content="SweetBoy" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://SweetBoy13735.GitHub.io" />
+		<!-- #endregion -->
+		
+		<title>Official Site | SweetBoy</title> <!-- Page title -->
+		
+		<!-- #region Resource links -->
+		<link href="./favicon.ico" rel="icon" sizes="any" />
+		<link href="./favicon.ico" rel="shortcut icon" sizes="any" />
+		<link href="./res/assets/img/logos/Avatar.png" rel="apple-touch-icon" />
+		<link href="./res/css/style.css" rel="stylesheet" />
+		<!-- #endregion -->
+
+		<!-- #region Scripts -->
+		<script defer src="./res/js/fontawesome/fontawesome.min.js"></script>
+		<script defer src="./res/js/fontawesome/solid.min.js"></script>
+		<script defer src="./res/js/fontawesome/brands.min.js"></script>
+		<!-- #endregion -->
+	</head>
+	<body>
+		<!-- Navigation bar -->
+		<nav class="flex bar" aria-label="Page menu">
+			<ul>
+				<li class="logo">
+					<a href="#" title="Scroll to top">
+						<img src="./res/assets/img/logos/Title.png" alt="SweetBoy title logo" />
+					</a>
+				</li>
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#services">Services</a>
+				</li>
+				<li>
+					<a href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a href="#testimonals">Testimonals</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+			<button type="button">☰</button>
+		</nav>
+		
+		<!-- Header -->
+		<header class="flex">
+			<div class="container">
+				<img src="./res/assets/img/logos/Title (Text).png" alt="SweetBoy title text" />
+				<h1>Technomancer. Night-rider. Gamer.</h1>
+				<nav aria-label="Social menu">
+					<ul class="flex">
+						<li>
+							<a class="button" href="https://GitHub.com/SweetBoy13735" target="_blank" rel="noopener noreferrer" title="SweetBoy on GitHub">
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<a class="button" href="https://www.LinkedIn.com/in/SweetBoy13735" target="_blank" rel="noopener noreferrer" title="SweetBoy on LinkedIn">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a class="button" href="https://www.YouTube.co.uk/@SweetBoy13735" target="_blank" rel="noopener noreferrer" title="SweetBoy on YouTube">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+						</li>
+						<li>
+							<a class="button" href="https://www.Twitch.tv/SweetBoy13735" target="_blank" rel="noopener noreferrer" title="SweetBoy on Twitch">
+								<i class="fa-brands fa-twitch"></i>
+							</a>
+						</li>
+						<li>
+							<a class="button" href="https://Twitter.com/SweetBoy13735" target="_blank" rel="noopener noreferrer" title="SweetBoy on Twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a class="button" href="https://www.Instagram.com/SweetBoy13735" target="_blank" rel="noopener noreferrer" title="SweetBoy on Instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a class="button" href="https://www.Facebook.com/SweetBoy13735" target="_blank" rel="noopener noreferrer" title="SweetBoy on Facebook">
+								<i class="fa-brands fa-facebook"></i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Main content -->
+		<main>
+			<div class="container">
+				<section id="about">
+					<h2>About me</h2>
+					<aside class="card">
+						<img src="./res/assets/img/logos/Avatar.png" alt="SweetBoy avatar logo" />
+						<p><strong>Name:</strong> Ramone Graham</p>
+						<p><strong>Age:</strong> <span class="age"></span> years</p>
+						<p><strong>Ethnicity:</strong> Jamacian British</p>
+						<p><strong>Likes:</strong> Programming, travelling, gaming</p>
+						<p><strong>Dislikes:</strong> Writing. I hate writing.</p>
+						<nav aria-label="Profile menu">
+							<ul>
+								<li>
+									<a class="button" href="./res/assets/docs/CV.pdf" download>Download CV</a>
+								</li>
+								<li>
+									<a class="button" href="#contact">Get in touch</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+					<p>
+						Hi, I'm <strong>Ramone Graham</strong>.
+						<br />
+						I enjoy moulding different physical and digital systems together to enhance experiences and create new opportunities.
+					</p>
+					<p>I do a li'l bit of bar-tending, baristing, coding, graphic design, production, streaming, and just about anything else that my "learn-while-doing" approach to life wills for me.</p>
+					<p>But that's honestly a mouthful to say, so we'll stick with my slogan as my main three descriptions of myself. Thanks, whimsical brain, and you, for stopping by!</p>
+					<div class="grid">
+						<article>
+							<h3>Technomancer.</h3>
+							<p>Not the term's first inception, but I've gotta throw my hat out to <a href="https://Twitter.com/Sylviaire_" target="_blank" rel="noopener noreferrer">Sylviaire</a> for the dub, saying <q>[I] weave life's code between [my] fingers in this World of cold calculations</q>. If it wasn't for her creative cooking, it wouldn't have stuck. 😂</p>
+							<p>Since the age of 10, I started programming using applications and controllers, notably <a href="https://Scratch.mit.edu" target="_blank" rel="noopener noreferrer">Scratch</a> and <a href="https://automation.Crouzet.com/millenium-3" target="_blank" rel="noopener noreferrer">Millenium 3</a>. I then applied these concepts into coding languages and ecosystems, most notably Java and Web development (HTML, CSS and JS).</p>
+							<p>Following a few charity fundraising events in association with <a href="https://TPDC.club" target="_blank" rel="noopener noreferrer">Pseudo Dopamine</a> and <a href="https://linktr.ee/WhatAsuraDoes" target="_blank" rel="noopener noreferrer">Asura</a>, I've also delved into livestream production, usually operating <a href="https://obsproject.com" target="_blank" rel="noopener noreferrer">OBS Studio</a> and implementing additional infrastructure if required.</p>
+						</article>
+						<article>
+							<h3>Night-rider.</h3>
+							<q>
+								Abstraction. Emulation. Comparison.
+								<br />
+								A continuous cyle of processing one's own mind until a sense of self-understanding is achieved, or the Icarus journey reaches its end.
+							</q>
+							<p>
+								Before I explain, let's be clear. Night-riding isn't "inciting violence" for thrills; nor is it "seeking revenge" for wrong-doings against me.
+								<br />
+								It's a state of mind; an interface to visualise the World in a focussed manner; a process of evaluation and improvement to be more than what limits define.
+							</p>
+							<p>All of these ideals are woven into every element within my brand, meticulously calculated and carefully executed. The "Glitched S" type-face, an accent disintegrating the tail-end, and a translation of the World into Night-rider's vision, applied onto full-body works.</p>
+						</article>
+						<article>
+							<h3>Gamer.</h3>
+							<p>Games aren't just a hobby; they're a culmination of compulsive planning, hours of programming, captivating music, and possibly much more; a unique blend of technical precision, human talent and natural beauty that, if well executed, has the potential to immerse someone in a completely different experience.</p>
+							<p>I've always wanted to be a part of a group which uses games as a way to not only showcase themselves but benefit the wider World around them. I'm proud to be the Chief Technical Officer of <a href="https://TPDC.club" target="_blank" rel="noopener noreferrer">Pseudo Dopamine</a>; A friendly community of content creatives, technology enthusiasts, and above all, gamers.</p>
+						</article>
+					</div>
+				</section>
+				<section id="services">
+					<h2>My services</h2>
+					<p>If you'd like to work with me, these are the fields I'm confident operating in. Be sure to check regularly or whenever you need, as these may change over time!</p>
+					<div class="grid">
+						<article class="card">
+							<h3 class="title">Nothing here yet...</h3>
+							<p>
+								Sorry! I'm still polishing some skills I'll need for my services. 😅
+								<br />
+								Be sure to stay tuned through my <a href="#">socials</a>; when a service is ready to order, I'll announce it there!
+							</p>
+						</article>
+					</div>
+				</section>
+				<section id="portfolio">
+					<h2>My portfolio</h2>
+					<p>Whether its a one-off or routine, There's always something on my to-do list. Here's a selection of public projects that I'm involved in!</p>
+					<h3>Upcoming</h3>
+					<div class="grid">
+						<article class="card">
+							<h4 class="title">Monke Bot</h4>
+							<p>A Discord app that shit-posts about various Monkes. That's it.</p>
+						</article>
+						<article class="card">
+							<h4 class="title">Pixel Paintballers</h4>
+							<p>
+								My first computer game; an arcade-style, horde shoot 'em up.
+								<br />
+								A re-write of the game, originally created under my old studio "HyperByte Industries".
+							</p>
+						</article>
+					</div>
+					<h3>Ongoing</h3>
+					<div class="grid">
+						<article class="card">
+							<h4 class="title">HTML5 Boilerplate</h4>
+							<p>A fork of <a href="https://H5BP.org" target="_blank" rel="noopener noreferrer">H5BP's</a> boilerplate template, customised to my liking.</p>
+							<nav aria-label="Card menu">
+								<ul>
+									<li>
+										<a class="button" href="https://GitHub.com/SweetBoy13735/HTML5-Boilerplate">View project</a>
+									</li>
+									<li>
+										<a class="button" href="https://GitHub.com/h5bp/html5-boilerplate-template" target="_blank" rel="noopener noreferrer">Visit origin</a>
+									</li>
+								</ul>
+							</nav>
+						</article>
+						<article class="card">
+							<h4 class="title">The Pseudo Dopamine Centre</h4>
+							<p>A friendly community of content creatives, technology enthusiasts, and above all, gamers.</p>
+							<nav aria-label="Card menu">
+								<ul>
+									<li>
+										<a href="https://TPDC.club" target="_blank" rel="noopener noreferrer" class="button">Visit site</a>
+									</li>
+								</ul>
+							</nav>
+						</article>
+						<article class="card">
+							<h4 class="title">The Rogue Summit</h4>
+							<p>
+								A charity series of FGC events featuring kick-off story-telling and tournament play, presented by The Final Three Productions.
+							</p>
+						</article>
+					</div>
+					<h3>Completed</h3>
+					<div class="grid">
+						<article class="card">
+							<h4 class="title">Pixel Paintballers (Legacy builds)</h4>
+							<p>
+								My first computer game; an arcade-style, horde shoot 'em up.
+								<br />
+								These are the legacy builds created under my old studio "HyperByte Industries".
+							</p>
+							<nav aria-label="Card menu">
+								<ul>
+									<li>
+										<a href="https://HyperByteIndustries.GitHub.io/Pixel-Paintballers-Legacy" target="_blank" rel="noopener noreferrer" class="button">Visit site</a>
+									</li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+				</section>
+				<section id="testimonals">
+					<h2>Client testimonals</h2>
+					<p>It wouldn't be a portfolio site without some vouches! Have a look at what's on offer from people I've had the pleasure of working with.</p>
+					<div class="grid">
+						<figure class="card">
+							<blockquote>
+								As someone who operates a series of tournaments, I've always found myself doing things independently. However, Ramone's insight has allowed us to level up our production for The Rogue Summit's past and future.
+								<br />
+								It's thanks to him that our broadcasts can run smoothly. His immense knowledge of code and technology has allowed us to work with maximum efficiency, and there's genuinely no one else I can think of who'd be fit for the job. We call him the "technomancer", and he's been able to live up to the name.
+							</blockquote>
+							<figcaption><strong>Syed Ayaan "<a href="https://linktr.ee/whatasuradoes" target="_blank" rel="noopener noreferrer">Asura</a>" Ahmed</strong>, Founder & CEO, The Final Three Productions</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section id="contact">
+					<h2>Contact me</h2>
+					<p>Interested in what you see? Well let's make something happen!</p>
+					<div class="grid">
+						<article class="card">
+							<h3 class="title">Business enquiries</h3>
+							<nav aria-label="Card menu">
+								<ul>
+									<li>
+										<a href="mailto:ramonegraham@gmail.com" class="button">E-Mail</a>
+									</li>
+								</ul>
+							</nav>
+						</article>
+						<article class="card">
+							<h3 class="title">Bug reports</h3>
+							<p>Before submitting a report, please check the "Issues" tab of the project repository. If one isn't listed, feel free to either create an issue, or <a href="mailto:ramonegraham@gmail.com">E-Mail me</a>.</p>
+						</article>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<p>&copy; 2020-2024 Ramone R. A. Graham (<a href="#">SweetBoy</a>). All rights reserved.</p>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="./res/js/app.js"></script>
+	</body>
 </html>

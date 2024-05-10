@@ -1,21 +1,21 @@
-# Sweetboy13735's Portfolio Website
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/Sweetboy13735/Sweetboy13735.github.io/blob/master/CODE_OF_CONDUCT.md)
+# SweetBoy's Portfolio
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/SweetBoy13735/SweetBoy13735.github.io/blob/master/CODE_OF_CONDUCT.md)
 
-As it says on the tin, this project is holding all of the source code for my portfolio website, which can be viewed [here](https://Sweetboy13735.github.io).
+This is the repository for my portfolio; built with HTML, CSS and JavaScript; available to view [here](https://SweetBoy13735.github.io).
 
 ## Support
-If you encounter any issues on the website, please feel free to [create an issue](https://github.com/Sweetboy13735/Sweetboy13735.github.io/issues) (Provided it hasn't been logged already) or [E-mail me](mailto:ramonegraham@gmail.com), describing fully what the problem is.
+If you encounter any problems, feel free to [create an issue](https://github.com/SweetBoy13735/SweetBoy13735.github.io/issues) or [E-Mail me](mailto:ramonegraham@gmail.com) (Provided it hasn't been logged already).
 
 ## Roadmap
-Throughout this project's development, I'll be using the [Git Flow](https://res.cloudinary.com/practicaldev/image/fetch/s--hFtoPgwf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/wo935eqxtakkfylqzn7y.png) branching method to keep track of all changes.
+This portfolio uses the [Git Flow](https://res.cloudinary.com/practicaldev/image/fetch/s--hFtoPgwf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/wo935eqxtakkfylqzn7y.png) branching method to keep track of progress.
 
-I do have a few plans on what the website shall look like, but since I'm currently taking a course on Web Development, getting the first few pages up will take a while.
+As I'm usually working on other projects, I don't have set timeframes in mind for releases. They'll happen when the time is right. 😂
 
-## [Contributing](https://github.com/Sweetboy13735/Sweetboy13735.github.io/blob/master/CONTRIBUTING.md)
-As this is my own portfolio page, I'm looking to do more of the heavy-lifting myself, but I am open to small contributions. Please check out the link above for more info.
+## [Contributing](https://github.com/SweetBoy13735/SweetBoy13735.github.io/blob/master/CONTRIBUTING.md)
+Since it's my portfolio, I'll be doing the heavy-lifting myself. However, I'm open to small contributions. Please check out the link above for more info.
 
-## Authors and acknowledgment
-Authors: Ramone "Sweetboy13735" Graham (Me! :D)
+## Authors and acknowledgements
+Author: Ramone "SweetBoy" Graham
 
-## [Licensing](https://github.com/Sweetboy13735/Sweetboy13735.github.io/blob/master/LICENSE)
-This project is licensed under the GNU General Public License. More info about this can be found in the link above.
+## [Licensing](https://github.com/SweetBoy13735/SweetBoy13735.github.io/blob/master/LICENSE)
+This project uses the GNU General Public License. More info about this can be found in the link above.
