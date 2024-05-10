@@ -112,8 +112,13 @@ p {
 	margin: .5em 0;
 }
 
-em {
+q, blockquote {
+	font-style: italic;
 	font-weight: normal;
+}
+
+blockquote {
+	margin-left: .5rem;
 }
 
 figcaption {
@@ -335,12 +340,9 @@ section+section {
 	content: "\"";
 	display: block;
 	font: normal 2em / 1 "FixedSys Excelsior", monospace;
-	font-style: italic;
-}
-
-#testimonals blockquote em {
+	left: -.5rem;
 	position: relative;
-	top: -.5rem;
+	top: .375rem;
 }
 /* #endregion */
 
