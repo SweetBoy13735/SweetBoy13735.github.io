@@ -221,7 +221,7 @@ strong {
 .grid {
 	display: grid;
 	gap: .75rem;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
 }
 /* #endregion */
 
@@ -361,7 +361,7 @@ section+section {
 	margin-top: .5rem;
 }
 
-#about>.grid {
+#about>div {
 	clear: left;
 }
 /* #endregion */
