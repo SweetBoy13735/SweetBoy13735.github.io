@@ -4,7 +4,7 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, Kroc Camen, and the H5BP dev community and team. */
 
 /* #region Base styles: opinionated defaults */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,700;1,700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wdth,wght@0,75..100,100..700;1,75..100,100..700&family=IBM+Plex+Serif:ital@1&family=Tomorrow:ital,wght@0,700;1,700&display=swap");
 
 @font-face {
 	font-family: "FixedSys Excelsior";
@@ -14,7 +14,7 @@
 html {
 	background-color: var(--night-black);
 	color: whitesmoke;
-	font: 300 20px / 1.25 "Open Sans", sans-serif;
+	font: 300 20px / 1.25 "IBM Plex Sans", sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -82,8 +82,12 @@ h2, h3, h4, h5, h6 {
 	margin-bottom: .5em;
 }
 
-h2, h3, h4 {
-	font-family: "IBM Plex Mono", monospace;
+h2, h3, h4, h5 {
+	font-family: Tomorrow, sans-serif;
+}
+
+h4, h5, h6 {
+	font-style: italic;
 }
 
 h2 {
@@ -100,35 +104,57 @@ h4 {
 
 h5 {
 	font-size: 1.5em;
-	font-weight: 800;
 }
 
 h6 {
 	font-size: 1.25em;
-	font-stretch: condensed;
 }
 
-p {
+p, q, blockquote {
 	margin: .5em 0;
 }
 
-q, blockquote {
-	font-style: italic;
+q, blockquote, caption, figcaption, code, a {
 	font-weight: normal;
+}
+
+q, blockquote {
+	font-family: "IBM Plex Serif", serif;
+	font-style: italic;
 }
 
 blockquote {
 	margin-left: .5rem;
 }
 
-figcaption {
-	font-weight: 500;
+blockquote::before, blockquote::after {
+	color: var(--night-red);
+	display: block;
+	font: normal 2em / 1 "FixedSys Excelsior", monospace;
+	left: -.5rem;
+	position: relative;
+	top: .375rem;
+}
+
+blockquote::before {
+	content: open-quote;
+}
+
+blockquote::after {
+	content: close-quote;
+}
+
+caption, figcaption {
+	font-stretch: condensed;
+}
+
+code {
+	font-family: "IBM Plex Mono", monospace;
 }
 
 a, button {
 	color: var(--night-red);
 	cursor: pointer;
-	font-weight: normal !important;
 	transition-property: all;
 }
 
@@ -172,6 +198,10 @@ button:active, a.button:active {
 
 a.button:active {
 	color: var(--night-red);
+}
+
+strong {
+	font-weight: 600;
 }
 /* #endregion */
 
@@ -333,16 +363,6 @@ section+section {
 
 #about>.grid {
 	clear: left;
-}
-
-#testimonals blockquote::before, #testimonals blockquote::after {
-	color: var(--night-red);
-	content: "\"";
-	display: block;
-	font: normal 2em / 1 "FixedSys Excelsior", monospace;
-	left: -.5rem;
-	position: relative;
-	top: .375rem;
 }
 /* #endregion */
 
