@@ -7,6 +7,13 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wdth,wght@0,75..100,100..700;1,75..100,100..700&family=IBM+Plex+Serif:ital@1&family=Tomorrow:ital,wght@0,700;1,700&display=swap");
 
 @font-face {
+	font-family: "Until 25";
+	font-style: italic;
+	font-weight: normal;
+	src: url("../assets/fonts/Until25-Italic.otf") format("opentype");
+}
+
+@font-face {
 	font-family: "FixedSys Excelsior";
 	src: url("../assets/fonts/FSEX302.ttf") format("truetype");
 }
