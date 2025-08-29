@@ -77,8 +77,8 @@ textarea {
 :root {
 	/* Colour palette */
 	--night-red: #900;
-	--night-black: #141414;
-	--night-black-overlay: #14141499;
+	--night-black: #191919;
+	--night-black-overlay: #19191999;
 }
 
 h1 {
