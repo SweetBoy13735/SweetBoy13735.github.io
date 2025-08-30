@@ -232,7 +232,7 @@ strong {
 .grid {
 	display: grid;
 	gap: .75rem;
-	grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 }
 /* #endregion */
 
@@ -377,6 +377,10 @@ section+section {
 #about>div {
 	clear: left;
 }
+
+#about .key-term {
+	text-decoration: underline;
+}
 /* #endregion */
 
 /* #region Footer */
@@ -421,7 +425,7 @@ footer>.container {
 	}
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 550px) {
 	#about aside {
 		min-width: 100%;
 		margin: 0 0 .5rem 0;
