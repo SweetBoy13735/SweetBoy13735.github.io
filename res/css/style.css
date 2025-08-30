@@ -82,7 +82,11 @@ textarea {
 }
 
 h1 {
-	font: normal 2.5em / 1 "FixedSys Excelsior", monospace;
+	font: normal 3.75em / 1 "Until 25", monospace;
+}
+
+h1, h4, h5, h6 {
+	font-style: italic;
 }
 
 h2, h3, h4, h5, h6 {
@@ -91,10 +95,6 @@ h2, h3, h4, h5, h6 {
 
 h2, h3, h4, h5 {
 	font-family: Tomorrow, sans-serif;
-}
-
-h4, h5, h6 {
-	font-style: italic;
 }
 
 h2 {
@@ -210,6 +210,10 @@ a.button:active {
 strong {
 	font-weight: 600;
 }
+
+.subtitle {
+	font-family: "FixedSys Excelsior", monospace;
+}
 /* #endregion */
 
 /* #region Lay-outs*/
@@ -284,23 +288,25 @@ nav.bar.scrolled button:active {
 /* #endregion */
 
 /* #region Header */
-header, header img {
-	width: 100%;
-}
-
 header {
-	background: center / cover no-repeat url("../assets/img/backgrounds/Banner.png");
+	background: fixed center / cover no-repeat url("../assets/img/NGHT-VSN/The\ Icarus\ Journey.jpg");
 	height: 100vh;
-	text-align: right;
+	font-size: 1.75em;
+	width: 100%;
 }
 
 header>.container {
 	max-width: 1125px;
 }
 
-header h1 {
-	font-size: 2em;
-	margin-bottom: 1rem;
+header .title {
+	font-size: 2.9279337896572365510241261744268em;
+	text-align: center;
+}
+
+header .subtitle {
+	margin-top: 0;
+	text-align: right;
 }
 
 header nav {
@@ -383,6 +389,12 @@ footer>.container {
 	padding: 1.25rem;
 }
 /* #endregion */
+
+@media only screen and (max-width: 1184.21052631578947368421052631584px) {
+	header .title {
+		font-size: calc(95vw * 35 / 384.23);
+	}
+}
 
 @media only screen and (max-width: 768px) {
 	html {
