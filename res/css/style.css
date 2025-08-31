@@ -290,6 +290,7 @@ nav.bar.scrolled button:active {
 /* #region Header */
 header {
 	background: fixed center / cover no-repeat url("../assets/img/NGHT-VSN/The\ Icarus\ Journey.jpg");
+	box-shadow: inset 0 -1rem .5rem -.5rem var(--night-red);
 	height: 100vh;
 	font-size: 1.75em;
 	width: 100%;
@@ -389,11 +390,10 @@ section+section {
 
 /* #region Footer */
 footer {
-	background: center / cover no-repeat url("../assets/img/backgrounds/Banner.png");
+	background: center / cover no-repeat url("../assets/img/NGHT-VSN/The\ Icarus\ Journey.jpg");
 }
 
 footer>.container {
-	background-color: var(--night-black-overlay);
 	padding: 1.25rem;
 }
 /* #endregion */
@@ -404,7 +404,7 @@ footer>.container {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 783.11px) {
 	html {
 		font-size: 15px;
 	}
