@@ -381,6 +381,10 @@ section+section {
 #about .key-term {
 	text-decoration: underline;
 }
+
+#portfolio #until-25>.title {
+	font-family: "Until 25", monospace;
+}
 /* #endregion */
 
 /* #region Footer */
